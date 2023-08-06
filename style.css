@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Poppins&family=Tinos&display=swap');
+
+body {
+    font-family: 'Tinos', serif;
+    overflow-x: hidden;
+}
+
+header {
+    background-image: url(/img/header/hero\ image.png);
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 1440px;
+    background-size: cover;
+}
+
+.header-nav{
+    display: flex;
+    color: white;
+    padding-top: 50px;
+ 
+}
+.teg {
+color: white;
+padding-left: 25px;
+text-transform: uppercase;
+font-weight: 600;
+transition: color 0.3s linear;
+}
+.teg:hover{
+    color: #ad6216;
+}
+
+.logo{
+    padding-left: 165px;
+    margin-right: 268px;
+}
+.logo img{
+    max-width: 100px;
+    height: 68px;
+} 
+
+.buy a{
+    color: white;
+    padding-left: 25px;
+transition: color 0.3s linear;
+}
+.buy a:hover{
+     color: #ad6216;
+}
+.buy{
+    height: 50px;
+    border-right: 1px solid #fff;
+    padding-right: 20px;
+}
+
+.telephone .number{
+    font-weight: 600;
+}
+.telephone{
+    color: white;
+    padding-left: 25px;
+
+}
+.telephone .tetx-bron{
+width: 155px;
+height: 38px;
+font-size: 16px;
+
+}
+.icon-phone{
+    color: white;
+transition: color 0.3s linear;
+}
+.icon-phone:hover{
+    color: #ad6216;
+}
+
+.phone-holder{
+    display: flex;
+    align-items: center;
+}
+.tetx-bron{
+    text-align: center; 
+}
+
+.btn button{
+    width: 157px;
+    height: 47px;
+    background-color: #FF7400;
+    text-align: center;
+    margin-left: 45px;
+    font-weight: 400;
+    font-size: 20px;
+    transition: background-color 0.2s linear;
+
+}
+.btn button:hover{
+background-color:#e7ac7b;
+}
+
+.title{
+margin-top: 200px;
+text-align: center;
+padding-right: 500px;
+}
+.title-1{ 
+    color: #D67E35;
+    font-size: 50px;
+    font-weight: 400;
+}
+.title-2{ 
+    color: #D67E35;
+    font-size: 80px;
+}
+
+.title-3{
+display: inline;
+    color: #ffffff;
+    font-size: 18px;
+    padding-top: 20px;
+    width: 61px;
+    height: 2px;
+}
+.title-3::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 61px;
+    background-color: white;
+    top:477px;
+    left: 570px;
+}
+.title-3::before{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 61px;
+    background-color: white;
+    top:477px;
+    left: 308px;
+}
+
+.view-menu button{
+     width: 157px;
+    height: 47px;
+    background-color: #FF7400;
+    text-align: center;
+   margin-top: 22px;
+    font-weight: 400;
+    font-size: 20px;
+     color: white;
+    text-transform: uppercase;
+    transition: background-color 0.2s linear;
+
+}
+.view-menu button:hover{
+    background-color: #e7ac7b;
+}
