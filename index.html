@@ -14,6 +14,7 @@
         <title>Дом лучшей еды</title>
     </head>
     <body>
+      
         <header>
             <div class="container">
                 <div class="header-nav">
@@ -43,8 +44,9 @@
                     </div>
 
                     <div class="btn">
-                        <button>Заказ столика</button>
+                     <a href="#popup"><button>Заказ столика</button></a>   
                     </div>
+                    
                 </div>
 
                 <div class="title">
@@ -53,6 +55,23 @@
                     <div class="title-3">ДОМ ЛУЧШЕЙ ЕДЫ</div>
                     <div class="view-menu">
                         <button>меню</button>
+                    </div>
+                </div>
+        
+            </div>
+            <div id="popup" class="popup open">
+                <a href="#header" class="popup-area"></a>
+                <div class="popup_body">
+                    <div class="popup-content">
+                        <a href="#!" id="close-popup" class="popup-close">X</a>
+                        <div class="title-popup">Ваши данные</div>
+                        <div class="name">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Quo dolor voluptates fugit atque voluptatum,
+                            accusantium tempora laboriosam sit eaque distinctio
+                            inventore commodi reprehenderit temporibus accusamus
+                            repellendus a, est suscipit qui?
+                        </div>
                     </div>
                 </div>
             </div>
@@ -344,8 +363,14 @@
             <div class="slider-povar">
                 <div class="slider-line-povar">
                     <img src="/img/section powar/image 4.png" alt="4" />
-                    <img src="/img/section powar/Mask Group (10).png" alt="10" />
-                    <img src="/img/section powar/Mask Group (11).png" alt="11" />
+                    <img
+                        src="/img/section powar/Mask Group (10).png"
+                        alt="10"
+                    />
+                    <img
+                        src="/img/section powar/Mask Group (11).png"
+                        alt="11"
+                    />
                 </div>
             </div>
             <div class="icon-slyder-povar">
@@ -357,24 +382,25 @@
                 </div>
             </div>
         </section>
-        
-<section class="footer">
-        <div class="container-footer1">
-            <div class="text-footer1">
-                <div class="title-footer1">
-                    Отпразднуйте в одном из <br />
-                    самых лучших ресторанов.
+
+        <section class="footer">
+            <div class="container-footer1">
+                <div class="text-footer1">
+                    <div class="title-footer1">
+                        Отпразднуйте в одном из <br />
+                        самых лучших ресторанов.
+                    </div>
+                    <div class="bisnes-lanch1">
+                        Только в этом месяце бизнес-ланч от 250 ₽
+                    </div>
                 </div>
-                <div class="bisnes-lanch1">
-                    Только в этом месяце бизнес-ланч от 250 ₽
+                <div class="btn">
+                    <button>Заказ столика</button>
                 </div>
             </div>
-            <div class="btn">
-                <button>Заказ столика</button>
-            </div>
-        </div>
-    </section>
+        </section>
         <script src="script.js"></script>
         <script src="script2.js"></script>
+        <script src="modal.js"></script>
     </body>
 </html>

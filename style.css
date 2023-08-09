@@ -11,12 +11,20 @@ header {
     height: 800px;
     width: 1440px;
     background-size: cover;
+   
 }
 
 .header-nav {
     display: flex;
     color: white;
     padding-top: 50px;
+    background-color: #000000;
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 100%;
+z-index: 1;
+
 }
 .teg {
     color: white;
@@ -36,6 +44,7 @@ header {
 .logo img {
     max-width: 100px;
     height: 68px;
+  
 }
 
 .buy a {
@@ -95,7 +104,8 @@ header {
 }
 
 .title {
-    margin-top: 200px;
+    margin-top: 118px;
+    padding-top: 172px;
     text-align: center;
     padding-right: 500px;
 }
@@ -500,13 +510,12 @@ header {
 .icon-slyder {
     display: flex;
     justify-content: space-between;
-position: relative;
-bottom: 175px;
-margin:0 110px;
+    position: relative;
+    bottom: 175px;
+    margin: 0 110px;
 }
 
 .slider {
-   
     margin: auto;
     width: 540px;
     height: 274px;
@@ -521,9 +530,7 @@ margin:0 110px;
     transition: all ease 1s;
 }
 
-
-
-.povar{
+.povar {
     margin-top: -50px;
     background-color: #c4c4c4;
 }
@@ -532,20 +539,21 @@ margin:0 110px;
     width: 306px;
     height: 400px;
     overflow: hidden;
+    
 }
 .slider-line-povar {
     display: flex;
     width: 1024px;
     height: 400px;
-    position: relative;
+    /* position: relative; */
     left: 0;
     transition: all ease 1s;
 }
 
-.slider-line-povar img{
+.slider-line-povar img {
     width: 306px;
     height: 400px;
-} 
+}
 .icon-angle-left1-povar button {
     width: 100px;
     height: 100px;
@@ -578,11 +586,12 @@ margin:0 110px;
 .icon-slyder-povar {
     display: flex;
     justify-content: space-between;
-position: relative;
-bottom: 175px;
-margin:0 300px;
+    position: relative;
+    z-index: 1;
+    bottom: 175px;
+    margin: 0 300px;
+    
 }
-
 
 .container-footer1 {
     background-image: url(/img/footer/footer.png);
@@ -610,3 +619,46 @@ margin:0 300px;
     color: white;
 }
 
+
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.popup_body{
+    background-color: white;
+    font-size: 25px;
+    width: 800px;
+    height:400px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.popup-content{
+    position: relative;
+}
+.popup-close{
+    position: absolute;
+    top: 0;
+    right: 6px;
+    color: #000000;
+    font-size: 50px;
+}
+
+.title-popup{
+font-weight: 600;
+font-size: 50px;
+}
+
+
+.btn a{
+    color: white;
+}
