@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Poppins&family=Tinos&display=swap');
+* {
+	padding: 0px;
+	margin: 0px;
 
+}
 body {
     font-family: 'Tinos', serif;
     overflow-x: hidden;
@@ -11,7 +15,6 @@ header {
     height: 800px;
     width: 1440px;
     background-size: cover;
-   
 }
 
 .header-nav {
@@ -21,10 +24,9 @@ header {
     background-color: #000000;
     position: fixed;
     left: 0;
-    top:0;
+    top: 0;
     width: 100%;
-z-index: 1;
-
+    z-index: 1;
 }
 .teg {
     color: white;
@@ -44,7 +46,6 @@ z-index: 1;
 .logo img {
     max-width: 100px;
     height: 68px;
-  
 }
 
 .buy a {
@@ -98,9 +99,13 @@ z-index: 1;
     font-weight: 400;
     font-size: 20px;
     transition: background-color 0.2s linear;
+    position: relative;
+    transition: top 0.3s ease 0s;
+
 }
 .btn button:hover {
     background-color: #e7ac7b;
+    top: 3px;   
 }
 
 .title {
@@ -157,9 +162,13 @@ z-index: 1;
     color: white;
     text-transform: uppercase;
     transition: background-color 0.2s linear;
+    position: relative;
+    transition: top 0.3s ease 0s;
+
 }
 .view-menu button:hover {
     background-color: #e7ac7b;
+    top: 3px;
 }
 
 .cards {
@@ -386,10 +395,15 @@ z-index: 1;
     font-size: 20px;
     transition: background-color 0.2s linear;
     box-shadow: 0px 0px 10px #ada6a6;
+    position: relative;
+    transition: top 0.3s ease 0s;
 }
 .btn-menu button:hover {
     background-color: #e7ac7b;
+    top: 3px;
 }
+
+
 .recomendate {
     position: absolute;
     bottom: 0;
@@ -539,13 +553,12 @@ z-index: 1;
     width: 306px;
     height: 400px;
     overflow: hidden;
-    
 }
 .slider-line-povar {
     display: flex;
     width: 1024px;
     height: 400px;
-    /* position: relative; */
+    position: relative;
     left: 0;
     transition: all ease 1s;
 }
@@ -587,10 +600,9 @@ z-index: 1;
     display: flex;
     justify-content: space-between;
     position: relative;
-    z-index: 1;
+    z-index: 0;
     bottom: 175px;
     margin: 0 300px;
-    
 }
 
 .container-footer1 {
@@ -619,46 +631,169 @@ z-index: 1;
     color: white;
 }
 
-
-.popup{
+.popup {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: rgb(0,0,0,0.8);
+    background-color: rgb(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
-  
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease 0s ;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.popup.open {
+    visibility: visible;
+    opacity: 1;
+}
+.popup.open .popup_body{
+    transform: translate(0px,0px);
+    opacity: 1;
 }
 .popup_body{
-    background-color: white;
+    background: linear-gradient(rgb(17, 17, 26), rgb(240, 113, 9));
     font-size: 25px;
     width: 800px;
-    height:400px;
+    height: 400px;
     display: flex;
     justify-content: center;
     text-align: center;
+    transition: all 0.3s ease 0s ;
+    transform: translate(0,-100%);
+    opacity: 0;
 }
-.popup-content{
+.popup-content {
     position: relative;
 }
-.popup-close{
+.close-popup {
     position: absolute;
     top: 0;
-    right: 6px;
-    color: #000000;
+    right: -80px;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+
+.title-popup {
+    font-weight: 600;
     font-size: 50px;
+    color: rgb(0, 0, 0);
+
+}
+.popup-area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 
-.title-popup{
-font-weight: 600;
-font-size: 50px;
-}
-
-
-.btn a{
+.btn a {
     color: white;
+}
+
+.name{
+    margin-top: 50px;
+background-color: #ffffff;
+width: 600px;
+height: 300px;
+border-radius: 10px;
+}
+
+.but-mod{
+    padding-top: 10px;
+}
+.but-mod button{
+  
+    background-color: rgb(48, 48, 207);
+    width: 450px;
+    height: 50px;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease 0
+}
+.but-mod button:hover{
+background-color: rgb(102, 102, 226);
+}
+.checkbox-main{
+    font-size: 20px;
+    letter-spacing: 1px;
+   padding-top: 10px;
+   padding-right: 265px;
+    
+}
+.checkbox{
+    transform:scale(1.5);
+    opacity:0.9;
+    cursor:pointer;
+}
+.password-main .pass{
+    border: 3px solid rgb(169, 169, 179);
+   background-color: #ffffff;
+   width: 450px;
+   height: 50px;
+   border-radius: 5px;
+   position: relative;
+   margin-top: 15px;
+
+}
+
+.password-control{
+    position: absolute;
+    top: 205px;
+	right: 145px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+    color: #000000;
+    font-size: 20px;
+    visibility: visible;
+  opacity: 1;
+}
+.password-control.vie{
+    visibility:hidden;
+    opacity: 0;
+}
+
+
+.line{
+    position: absolute;
+    height: 45px;
+    border-right: 3px solid rgb(169, 169, 179);
+    top: 195px;
+    right: 171px;
+}
+
+.login-main .text{
+    border: 3px solid rgb(169, 169, 179);
+    background-color: #ffffff;
+    width: 450px;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+
+.password-control-none{
+    position: absolute;
+    top: 205px;
+	right: 145px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+    color: #000000;
+    font-size: 20px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.password-control-none.control{
+    visibility: visible;
+    opacity: 1;
 }

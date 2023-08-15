@@ -14,14 +14,12 @@
         <title>Дом лучшей еды</title>
     </head>
     <body>
-      
         <header>
             <div class="container">
                 <div class="header-nav">
                     <div class="logo">
                         <img src="/img/header/LOGO.png" alt="logo" />
                     </div>
-
                     <div class="nav-menu">
                         <a class="teg" href="#!">Главная</a>
                         <a class="teg" href="#!">Меню</a>
@@ -43,10 +41,9 @@
                         </p>
                     </div>
 
-                    <div class="btn">
-                     <a href="#popup"><button>Заказ столика</button></a>   
+                    <div id="popup-btn" class="btn">
+                        <a href="#popup"><button>Заказ столика</button></a>
                     </div>
-                    
                 </div>
 
                 <div class="title">
@@ -57,20 +54,58 @@
                         <button>меню</button>
                     </div>
                 </div>
-        
             </div>
-            <div id="popup" class="popup open">
-                <a href="#header" class="popup-area"></a>
+            <div id="popup" class="popup">
+                <a href="#header" id="popup-area" class="popup-area"></a>
                 <div class="popup_body">
                     <div class="popup-content">
-                        <a href="#!" id="close-popup" class="popup-close">X</a>
-                        <div class="title-popup">Ваши данные</div>
+                        <a href="#header" id="close-popup" class="close-popup"
+                            >X</a
+                        >
                         <div class="name">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Quo dolor voluptates fugit atque voluptatum,
-                            accusantium tempora laboriosam sit eaque distinctio
-                            inventore commodi reprehenderit temporibus accusamus
-                            repellendus a, est suscipit qui?
+                            <div class="title-popup">Вход</div>
+                            <form
+                                action="#"
+                                method="post"
+                                enctype="multipart/form-data"
+                            >
+                                <div class="login-main">
+                                    <input
+                                        class="text"
+                                        type="text"
+                                        name="Login"
+                                        value=""
+                                        placeholder="Логин"
+                                    />
+                                </div>
+                                <div class="password-main">
+                                    <input
+                                        class="pass"
+                                        type="password"
+                                        name="Login"
+                                        value=""
+                                        placeholder="Пароль"
+                                        id="password-input"
+
+                                    />
+                                    <div class="line"></div>
+                                    <a href="#" id="password-control" class="password-control">Показать</a>
+
+                                </div>
+
+                                <div class="checkbox-main">
+                                    <p>
+                                        <input
+                                            class="checkbox"
+                                            type="checkbox"
+                                        />
+                                        Запомнить меня
+                                    </p>
+                                </div>
+                                <div class="but-mod">
+                                    <a href="#!"><button>Войти</button></a>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -402,5 +437,7 @@
         <script src="script.js"></script>
         <script src="script2.js"></script>
         <script src="modal.js"></script>
+        <script src="input.js"></script>
+        <script src="json.js"></script>
     </body>
 </html>
